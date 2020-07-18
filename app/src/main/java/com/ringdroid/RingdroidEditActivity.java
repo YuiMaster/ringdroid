@@ -66,7 +66,7 @@ public class RingdroidEditActivity extends Activity
     private long mLoadingLastUpdateTime;
     // 加载继续
     private boolean mLoadingKeepGoing;
-    // 记录最后更新时间
+    // 录音最后更新时间
     private long mRecordingLastUpdateTime;
     // 录音继续
     private boolean mRecordingKeepGoing;
@@ -771,6 +771,9 @@ public class RingdroidEditActivity extends Activity
         mLoadSoundFileThread.start();
     }
 
+    /**
+     * 录音
+     */
     private void recordAudio() {
         mFile = null;
         mTitle = null;
