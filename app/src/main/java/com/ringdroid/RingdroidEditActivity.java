@@ -62,11 +62,17 @@ import java.io.StringWriter;
 public class RingdroidEditActivity extends Activity
         implements MarkerView.MarkerListener,
         WaveformView.WaveformListener {
+    // 加载上次更新时间
     private long mLoadingLastUpdateTime;
+    // 加载继续
     private boolean mLoadingKeepGoing;
+    // 记录最后更新时间
     private long mRecordingLastUpdateTime;
+    // 录音继续
     private boolean mRecordingKeepGoing;
+    // 录音时间
     private double mRecordingTime;
+    // 完成活动
     private boolean mFinishActivity;
     private TextView mTimerTextView;
     private AlertDialog mAlertDialog;
@@ -76,7 +82,9 @@ public class RingdroidEditActivity extends Activity
     private String mFilename;
     private String mArtist;
     private String mTitle;
+    // 新文件种类
     private int mNewFileKind;
+    // 获得内容意图
     private boolean mWasGetContentIntent;
     // 波形图
     private WaveformView mWaveformView;
