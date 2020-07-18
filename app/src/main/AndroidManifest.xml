@@ -24,9 +24,6 @@
           android:versionName="2.7.4"
           android:versionCode="20704">
 
-    <uses-sdk android:minSdkVersion="16"
-              android:targetSdkVersion="25"/>
-
     <uses-permission android:name="android.permission.READ_CONTACTS" />
     <uses-permission android:name="android.permission.WRITE_CONTACTS" />
     <uses-permission android:name="android.permission.WRITE_SETTINGS" />
